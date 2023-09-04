@@ -1,0 +1,153 @@
+[
+    {
+        "key":  "externalEmailAddress",
+        "templateOptions":  {
+                                "label":  "External E-mail Address",
+                                "pattern":  {
+
+                                            },
+                                "required":  true
+                            },
+        "validation":  {
+                           "messages":  {
+                                            "pattern":  "Invalid email address"
+                                        }
+                       },
+        "type":  "email",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "emailuniquebool",
+        "templateOptions":  {
+                                "label":  "Emailaddress available?",
+                                "useSwitch":  true,
+                                "checkboxLabel":  "Yes",
+                                "mustBeTrue":  true,
+                                "useDataSource":  true,
+                                "dataSourceConfig":  {
+                                                         "dataSourceGuid":  "$dataSourceGuid_0",
+                                                         "input":  {
+                                                                       "propertyInputs":  [
+                                                                                              {
+                                                                                                  "propertyName":  "externalemailaddress",
+                                                                                                  "otherFieldValue":  {
+                                                                                                                          "otherFieldKey":  "externalEmailAddress"
+                                                                                                                      }
+                                                                                              }
+                                                                                          ]
+                                                                   }
+                                                     },
+                                "displayField":  "Result"
+                            },
+        "type":  "boolean",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "emailUniqueInfo",
+        "templateOptions":  {
+                                "label":  "Info",
+                                "rows":  3,
+                                "placeholder":  "Loading...",
+                                "useDataSource":  true,
+                                "dataSourceConfig":  {
+                                                         "dataSourceGuid":  "$dataSourceGuid_1",
+                                                         "input":  {
+                                                                       "propertyInputs":  [
+                                                                                              {
+                                                                                                  "propertyName":  "externalemailaddress",
+                                                                                                  "otherFieldValue":  {
+                                                                                                                          "otherFieldKey":  "externalEmailAddress"
+                                                                                                                      }
+                                                                                              }
+                                                                                          ]
+                                                                   }
+                                                     },
+                                "displayField":  "Result"
+                            },
+        "className":  "textarea-resize-vert",
+        "type":  "textarea",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "displayname",
+        "templateOptions":  {
+                                "label":  "Display Name",
+                                "required":  true,
+                                "minLength":  2
+                            },
+        "type":  "input",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "alias",
+        "templateOptions":  {
+                                "label":  "Alias",
+                                "useDataSource":  false,
+                                "required":  true,
+                                "minLength":  2
+                            },
+        "type":  "input",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "firstname",
+        "templateOptions":  {
+                                "label":  "First name"
+                            },
+        "type":  "input",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "initials",
+        "templateOptions":  {
+                                "label":  "Initials"
+                            },
+        "type":  "input",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "lastname",
+        "templateOptions":  {
+                                "label":  "Last name"
+                            },
+        "type":  "input",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "hidefromaddresslist",
+        "templateOptions":  {
+                                "label":  "Hide from Address Lists",
+                                "useSwitch":  true,
+                                "checkboxLabel":  "Hide from Address Lists"
+                            },
+        "type":  "boolean",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    }
+]
